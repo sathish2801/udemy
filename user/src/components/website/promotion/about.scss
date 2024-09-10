@@ -1,0 +1,121 @@
+.main {
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    margin: 0px 90px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+    .heading {
+        font-size: 1.5em; /* Medium size for heading */
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #333;
+    }
+    
+    .about-content {
+        display: flex;
+        // flex-wrap: wrap; /* Allow wrapping for smaller screens */
+         /* Add some spacing between flex items */
+        
+        .sub-heading {
+            font-size: 2em; /* Large size for sub-heading */
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .content {
+            max-width: 80%;
+            font-size: 1em;
+            color: #666;
+            line-height: 1.8;
+
+            ul {
+                list-style-type: none;
+                padding-left: 0;
+                margin-top: 20px;
+                font-weight: 700;
+
+                li {
+                    margin-bottom: 10px;
+                    position: relative;
+                    padding-left: 25px;
+
+                    &::before {
+                        content: '\2713'; /* Unicode for a checkmark */
+                        color: #27ae60;
+                        font-size: 1.2em;
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                    }
+                }
+            }
+        }
+
+        img {
+            position: relative;
+            width: 100%;
+            height: 100%; /* Maintain aspect ratio */
+            border-radius: 10px;
+        }
+    }
+
+    @media screen and (max-width: 1200px) {
+        margin: 0px 60px;
+        .about-content .content {
+            max-width: 100%;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        margin: 0px 30px;
+        margin-top: 40px;
+
+        .heading {
+            font-size: 1.3em; /* Slightly smaller for medium screens */
+        }
+
+        .about-content {
+            flex-direction: column; /* Stack content vertically on smaller screens */
+            align-items: center;
+
+            .sub-heading {
+                font-size: 1.8em; /* Adjust size for sub-heading */
+            }
+
+            .content {
+                max-width: 100%;
+                text-align: center; /* Center text on smaller screens */
+            }
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        margin: 0px 15px;
+        margin-top: 30px;
+
+        .heading {
+            font-size: 1.2em; /* Smaller heading for mobile devices */
+        }
+
+        .about-content {
+            gap: 10px; /* Reduce gap between items */
+            
+            .sub-heading {
+                font-size: 1.5em; /* Smaller sub-heading */
+            }
+
+            .content {
+                font-size: 0.9em; /* Smaller text size */
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+
+  .partner-logo-container {
+    display: flex;
+    flex-direction: column; /* Stack the circle and text vertically */
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    margin: 30px;
+  }
+  
+  .partner-logo-circle {
+    background-color: #ff6363;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-bottom: 5px; /* Space between the circle and text */
+  }
+  
+  .partner-logo-text {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #474747;
+    font-weight:600;
+    text-align: center; /* Center the text */
+  }
+  

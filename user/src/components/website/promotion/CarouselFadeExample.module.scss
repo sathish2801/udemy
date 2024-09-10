@@ -1,0 +1,37 @@
+// SCSS for Carousel component
+.custom-carousel {
+  .custom-carousel-item {
+    position: relative;
+    // Adjust the height and width of carousel items
+    height: 500px; // Adjust as needed
+    .custom-carousel-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // Ensure image covers the container
+    }
+  }
+
+  .custom-carousel-caption {
+
+    bottom: 20px; // Adjust the position from the bottom
+    left: 20px; // Adjust the position from the left
+    right: 20px; // Adjust the position from the right
+    color: #fff; // White text color
+    text-align: left; // Align text to the left
+
+    .custom-caption-title {
+      font-size: 2rem; // Adjust font size
+      font-weight: bold; // Bold title
+      margin-bottom: 10px; // Space below the title
+    }
+
+    .custom-caption-text {
+      font-size: 1rem; // Adjust font size
+      margin-bottom: 5px; // Space below the text
+    }
+
+    .custom-caption-additional {
+      font-size: 0.875rem; // Adjust font size for additional text
+    }
+  }
+}

@@ -1,0 +1,124 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(111, 111, 111, 0.2);
+  border-radius: 4px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%; // Ensure the header spans the full width
+
+  .logo_name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 10px 0;
+
+    p {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+    }
+  }
+
+  .nav {
+    display: flex;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 20px;
+
+      li {
+        padding: 10px 20px;
+        cursor: pointer;
+        position: relative;
+        color: #484848;
+        font-family: "Poppins", sans-serif;
+        font-weight: 500;
+        transition: color 0.3s ease, transform 0.3s ease;
+
+        &:hover {
+          color: #4e4f50;
+          transform: translateY(-2px);
+        }
+
+        &.active {
+          color: #4e4f50;
+          font-weight: bold;
+
+          &::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: #4e4f50;
+            bottom: -5px;
+            left: 0;
+          }
+        }
+
+        &:not(.active) {
+          color: #7a7a7a;
+        }
+      }
+    }
+
+    .menu-icon {
+      display: none; // Hidden by default
+      font-size: 24px;
+      cursor: pointer;
+    }
+  }
+
+  .user-options {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+
+    i {
+      margin-left: 15px;
+      font-size: 24px;
+      cursor: pointer;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #4e4f50;
+      }
+    }
+  }
+}
+
+// Responsive Design
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    padding: 15px;
+    align-items: flex-start;
+
+    .nav {
+      display: none; // Hide nav by default
+      width: 100%;
+      margin-top: 10px;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+
+      &.show-nav {
+        display: flex; // Show nav when toggled
+      }
+    }
+
+    .menu-icon {
+      display: block; // Show menu icon on small screens
+    }
+  }
+}

@@ -1,0 +1,119 @@
+.certificate-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;/* Optional: Adjust padding as needed */
+  border: linear-gradient(#909090, #494949) 1; 
+}
+
+.certificate {
+  background-color: white;
+  padding: 30px;
+  width: 800px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+  border: 10px solid transparent; /* Outer border with space for shadow effect */
+  background-clip: padding-box; /* Clips the background to the border */
+  border-image: linear-gradient(#909090, #494949) 1; /* Elegant gradient border */
+}
+
+.certificate::before {
+  content: '';
+  position: absolute;
+  
+  border: 10px solid transparent; /* Outer border with space for shadow effect */
+  border: linear-gradient(#909090, #494949) 1; /* Main solid border */
+  border-radius: 12px; /* Rounded corners */
+  z-index: -1; /* Place it behind the content */
+}
+
+.coursera-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.ribbon {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 180px;
+  background-color: #c2f89e;
+  padding: 10px;
+  text-align: center;
+  border-radius: 12px 0 0 12px;
+}
+
+.ribbon-text {
+  font-size: 16px;
+  font-weight: bold;
+  color: #4b4b4b;
+}
+
+.certificate-id {
+  margin-bottom: 20px;
+  font-size: 12px;
+  color: #888;
+}
+
+.certified-name {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.certified-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.course-name {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.course-description {
+  font-size: 16px;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.signature-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.coursera-seal {
+  width: 100px;
+}
+
+.signature {
+  text-align: left;
+}
+
+.signature p {
+  margin: 0;
+}
+
+.verification {
+  font-size: 12px;
+  color: #888;
+}
+
+.download-button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}

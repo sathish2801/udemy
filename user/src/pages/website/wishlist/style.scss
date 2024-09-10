@@ -1,0 +1,22 @@
+
+.list {
+   
+    margin: auto;
+    background-color:rgb(241, 251, 241);
+
+    .course{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 80px 0;
+        font-weight: bolder;
+        font-size:40px;
+        font-family: poppins;
+    
+    }
+    .row {
+        display: flex;
+    }
+}
+

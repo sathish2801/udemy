@@ -1,0 +1,40 @@
+/* SideNavbar.css */
+.side-navbar {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .side-navbar.collapsed {
+    width: 60px;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  .nav-item span {
+    margin-left: 10px;
+    font-size: 18px;
+  }
+  
+  .side-navbar.collapsed .nav-item span {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .side-navbar {
+      width: 60px;
+    }
+  
+    .nav-item span {
+      display: none;
+    }
+  }
+  

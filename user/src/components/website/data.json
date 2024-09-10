@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "image": "https://via.placeholder.com/300",
+    "title": "React.js",
+    "price": 29.99,
+    "rating": 4.5,
+    "difficulty": "Intermediate",
+    "description": "Learn the fundamentals of React.js and build dynamic user interfaces.",
+    "duration": 8
+  },
+  {
+    "id": 2,
+    "image": "https://via.placeholder.com/300",
+    "title": "Python",
+    "price": 19.99,
+    "rating": 4.0,
+    "difficulty": "Beginner",
+    "description": "A comprehensive guide to learning Python, from basics to advanced topics.",
+    "duration": 6
+  },
+  {
+    "id": 3,
+    "image": "https://via.placeholder.com/300",
+    "title": "Node.js",
+    "price": 39.99,
+    "rating": 5.0,
+    "difficulty": "Advanced",
+    "description": "Master Node.js for server-side programming and build scalable applications.",
+    "duration": 12
+  }
+]
